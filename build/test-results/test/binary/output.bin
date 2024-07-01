@@ -1,0 +1,48 @@
+O15:59:59.135 [Test worker] DEBUG o.s.c.a.AnnotationConfigApplicationContext --
+o                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@320de594
+I15:59:59.171 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+Ž                Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+K15:59:59.384 [Test worker] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner --
+¥                Identified candidate component class: file [C:\Users\rla\Desktop\inflearn\core\build\classes\java\main\hello\core\discount\FixDiscountPolicy.class]
+K15:59:59.389 [Test worker] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner --
+¦                Identified candidate component class: file [C:\Users\rla\Desktop\inflearn\core\build\classes\java\main\hello\core\discount\RateDiscountPolicy.class]
+K15:59:59.392 [Test worker] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner --
+£                Identified candidate component class: file [C:\Users\rla\Desktop\inflearn\core\build\classes\java\main\hello\core\member\MemberServiceImpl.class]
+K15:59:59.394 [Test worker] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner --
+¨                Identified candidate component class: file [C:\Users\rla\Desktop\inflearn\core\build\classes\java\main\hello\core\member\MemoryMemberRepository.class]
+K15:59:59.398 [Test worker] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner --
+¡                Identified candidate component class: file [C:\Users\rla\Desktop\inflearn\core\build\classes\java\main\hello\core\order\OrderServiceImpl.class]
+I15:59:59.593 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+I15:59:59.601 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+}                Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+I15:59:59.603 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+Š                Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+I15:59:59.607 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+‡                Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+I15:59:59.629 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+L                Creating shared instance of singleton bean 'autoAppConfig'
+I15:59:59.646 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+Z                Creating shared instance of singleton bean 'allBeanTest.DiscountService'
+I15:59:59.679 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+P                Creating shared instance of singleton bean 'fixDiscountPolicy'
+I15:59:59.681 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+Q                Creating shared instance of singleton bean 'rateDiscountPolicy'
+I15:59:59.709 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+ƒ                Autowiring by type from bean name 'allBeanTest.DiscountService' via constructor to bean named 'fixDiscountPolicy'
+I15:59:59.710 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+„                Autowiring by type from bean name 'allBeanTest.DiscountService' via constructor to bean named 'rateDiscountPolicy'
+“policyMap = {fixDiscountPolicy=hello.core.discount.FixDiscountPolicy@433e536f, rateDiscountPolicy=hello.core.discount.RateDiscountPolicy@89c65d5}
+mpolicies = [hello.core.discount.FixDiscountPolicy@433e536f, hello.core.discount.RateDiscountPolicy@89c65d5]
+I15:59:59.713 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+P                Creating shared instance of singleton bean 'memberServiceImpl'
+I15:59:59.716 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+U                Creating shared instance of singleton bean 'memoryMemberRepository'
+I15:59:59.718 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+~                Autowiring by type from bean name 'memberServiceImpl' via constructor to bean named 'memoryMemberRepository'
+I15:59:59.719 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+O                Creating shared instance of singleton bean 'orderServiceImpl'
+I15:59:59.723 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+}                Autowiring by type from bean name 'orderServiceImpl' via constructor to bean named 'memoryMemberRepository'
+I15:59:59.724 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+y                Autowiring by type from bean name 'orderServiceImpl' via constructor to bean named 'rateDiscountPolicy'
