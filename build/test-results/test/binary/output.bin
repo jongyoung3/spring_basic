@@ -1,24 +1,17 @@
-O14:43:57.134 [Test worker] DEBUG o.s.c.a.AnnotationConfigApplicationContext --
-o                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@320de594
-I14:43:57.204 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+O13:04:58.354 [Test worker] DEBUG o.s.c.a.AnnotationConfigApplicationContext --
+o                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4b20ca2b
+I13:04:58.390 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
 �                Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-I14:43:57.460 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+I13:04:58.490 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-I14:43:57.471 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+I13:04:58.506 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
 }                Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-I14:43:57.473 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+I13:04:58.510 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
 �                Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-I14:43:57.479 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+I13:04:58.515 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
 �                Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-I14:43:57.497 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-`                Creating shared instance of singleton bean 'beanLifeCycleTest.LifeCycleConfig'
-I14:43:57.505 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-L                Creating shared instance of singleton bean 'networkClient'
-생성자 호출, url = null
-NetworkClient.init
-"connect: http://hello-spring.dev
-Ccall: http://hello-spring.devmessage = 초기화 연결 메시지
-O14:43:57.566 [Test worker] DEBUG o.s.c.a.AnnotationConfigApplicationContext --
-�                Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@320de594, started on Mon Jul 01 14:43:57 KST 2024
-NetworkClient.close
- close: http://hello-spring.dev
+I13:04:58.534 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+e                Creating shared instance of singleton bean 'singletonWithPrototypeTest1.ClientBean'
+XPrototypeBean.init hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@3caa4757
+I13:04:58.569 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+�                Autowiring by type from bean name 'singletonWithPrototypeTest1.ClientBean' via constructor to bean named 'singletonWithPrototypeTest1.PrototypeBean'
