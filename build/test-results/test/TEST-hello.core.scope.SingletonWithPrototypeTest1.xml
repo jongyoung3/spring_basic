@@ -1,24 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hello.core.scope.SingletonWithPrototypeTest1" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-02T04:04:57" hostname="DESKTOP-0K0RMU0" time="1.291">
+<testsuite name="hello.core.scope.SingletonWithPrototypeTest1" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-07-04T02:00:33" hostname="BOOK-23CU0HMRMD" time="0.463">
   <properties/>
-  <testcase name="singletonClientUsePrototype()" classname="hello.core.scope.SingletonWithPrototypeTest1" time="1.291"/>
-  <system-out><![CDATA[13:04:58.354 [Test worker] DEBUG o.s.c.a.AnnotationConfigApplicationContext --
-                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4b20ca2b
-13:04:58.390 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+  <testcase name="prototypeFind()" classname="hello.core.scope.SingletonWithPrototypeTest1" time="0.428"/>
+  <testcase name="singletonClientUsePrototype()" classname="hello.core.scope.SingletonWithPrototypeTest1" time="0.033"/>
+  <system-out><![CDATA[11:00:33.758 [Test worker] DEBUG o.s.c.a.AnnotationConfigApplicationContext --
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@abf688e
+11:00:33.771 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-13:04:58.490 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+11:00:33.802 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
-13:04:58.506 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+11:00:33.808 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
-13:04:58.510 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+11:00:33.809 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
-13:04:58.515 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+11:00:33.811 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
-13:04:58.534 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+PrototypeBean.init hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@5cbf9e9f
+PrototypeBean.init hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@4163f1cd
+11:00:33.887 [Test worker] DEBUG o.s.c.a.AnnotationConfigApplicationContext --
+                Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@cda4919
+11:00:33.888 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+11:00:33.891 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+11:00:33.891 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+11:00:33.892 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+11:00:33.893 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
+                Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+11:00:33.896 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
                 Creating shared instance of singleton bean 'singletonWithPrototypeTest1.ClientBean'
-PrototypeBean.init hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@3caa4757
-13:04:58.569 [Test worker] DEBUG o.s.b.f.s.DefaultListableBeanFactory --
-                Autowiring by type from bean name 'singletonWithPrototypeTest1.ClientBean' via constructor to bean named 'singletonWithPrototypeTest1.PrototypeBean'
+PrototypeBean.init hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@67fe380b
+PrototypeBean.init hello.core.scope.SingletonWithPrototypeTest1$PrototypeBean@3dedb4a6
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
